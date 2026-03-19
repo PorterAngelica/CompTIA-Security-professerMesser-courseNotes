@@ -233,6 +233,48 @@ Only authorized employees can enter.
 
 ---
 
+## Directive Controls (Fix)
+
+### Directive Controls
+
+Directive controls are controls that tell people what they should do.
+
+They provide guidance, rules, or instructions to influence behavior.
+
+### Simple way to remember it
+> Directive controls = tell you what to do
+
+---
+
+### Purpose
+
+They are used to:
+
+- Guide user behavior  
+- Define expectations  
+- Reduce the chance of mistakes  
+
+---
+
+### Examples
+
+- Security policies  
+- Acceptable use policies  
+- Procedures  
+- Guidelines  
+- Security awareness instructions  
+
+---
+
+### Example
+
+A company creates a policy:
+
+> “Employees must use strong passwords and never share them.”
+
+👉 This is a **directive control** because it tells users what to do.
+---
+
 ## Cheat Sheet (Quick Review)
 
 ### Control Categories
