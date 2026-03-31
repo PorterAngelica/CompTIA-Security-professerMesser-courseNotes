@@ -162,179 +162,121 @@ They give scenarios like:
 
 ---
 ---
+# 1.2 The CIA Triad 🔐
 
-## Domain 1.2 – Non-Repudiation
 
----
+## Confidentiality 🔒
+If we want to prevent someone from gaining access to private information, we need to provide that information in a confidential way.  
+Prevent disclosure of information to unauthorized individuals or systems.  
 
-## 1️⃣ Course Notes (Simple / Messer Style)
-
-### What is Non-Repudiation
-
-Non-repudiation ensures that someone cannot deny that they performed an action.
-
-It provides proof of origin and integrity of data.
-
-### Simple way to remember it
-> Non-repudiation = you can’t deny it
+The biggest challenge we have in IT is making data available to others, but making sure that availability is only to the right people. We refer to this as confidentiality. One way we can provide this is through encryption.  
 
 ---
 
-### Why It Matters
+### Encryption 🔐
+We can have one person encrypt data, send it to someone else, and that other person can decrypt that data to be able to see the original plaintext (message). Anyone in the middle who happens to get access to that encrypted data has no idea what’s on the inside. And if they were to look at that data, they would not be able to discern anything important from that information.  
 
-Without non-repudiation:
-
-- A user could say: “That wasn’t me”  
-- A sender could deny sending a message  
-- A transaction could be disputed  
-
-👉 Non-repudiation provides **accountability**
+Encode messages so only certain people can read it.  
 
 ---
 
-## 2️⃣ How It Works
-
-Non-repudiation is usually achieved using:
+Another way to provide confidentiality is to set limits on what someone may have access to. We commonly do this with access controls.  
 
 ---
 
-### 1. Digital Signatures
+### Access controls 🛂
+We can limit who might have access to certain types of information. Ex: this might allow someone in the marketing department to be able to see all of the marketing presentations and be able to make changes to those. But it would prevent all access to any accounting information of the organization.  
 
-- Proves who sent the data  
-- Uses cryptography  
-
-👉 Like signing a contract digitally  
+Selectively restrict access to a resource.  
 
 ---
 
-### 2. Hashing
+### Two-Factor authentication 🔑
+If you ever need to provide additional authentication factors when logging into a system, that's another type of confidentiality. Someone would not be able to access an account unless they had the proper authentication credentials. And adding those additional factors provides more confidentiality.  
 
-- Creates a unique fingerprint of data  
-- If data changes → hash changes  
-
-👉 Used to verify integrity  
+Additional confirmation before information is disclosed.  
 
 ---
 
-### 3. Public Key Cryptography
+## Integrity 🧩
+Where, if  we are sending information from one person to another, we want to make sure the recipient really is receiving exactly what was sent from the originator  
+Messages can’t be modified without detection  
 
-- Combines encryption + signatures  
+When we are receiving data for a third party, we’d like to verify that the data we have received is exactly the same data that was sent and nobody has made changes to that data while it was traversing the network.  
+Data is stored and transferred as intended  
+Any modification to the data would be identified  
 
-Ensures:
-- Authenticity  
-- Integrity  
-- Non-repudiation  
-
----
-
-## 🧠 Key Idea (VERY IMPORTANT)
-
-Non-repudiation actually combines:
-
-- **Authentication → who sent it**  
-- **Integrity → data not changed**  
-
-👉 Together = **cannot deny action**
+We are able to do that by using methods of integrity. One way to provide integrity is by hashing.  
 
 ---
 
-## 3️⃣ Real-World Example
+### Hashing #️⃣
+The person sending the data will create a hash of the data and send you both the data and the hash at the same time. When you receive the data, you’ll perform the same hashing function, and if your hash matches your sender’s hash, then you know that the data you’ve received is exactly the same data that was sent.  
 
-Alice sends a signed email to Bob.
-
-Bob can verify:
-
-- It came from Alice  
-- It was not modified  
-
-👉 Alice **cannot deny sending it**
+Map data of an arbitrary length to data of a fixed length.  
 
 ---
 
-## 4️⃣ Cheat Sheet (Quick Review)
-
-| Concept            | Meaning                         |
-|-------------------|---------------------------------|
-| Non-repudiation   | Cannot deny an action           |
-| Digital signature | Proves sender                   |
-| Hashing           | Verifies data integrity         |
-| Public key crypto | Enables signatures              |
+We can enhance this integrity by including a digital signature.  
 
 ---
 
-## 5️⃣ Flashcards
+### Digital Signatures ✍️
+When we’re sending data, which takes a hash and encrypt it with an asymmetric encryption algorithm. This means we can check to make sure none of the data has changed and we can confirm the person who sent the data, which also provides an additional level of integrity, and that could be important if you’re sending sensitive data.  
 
-### Flashcard 1
-**Q:** What is non-repudiation?  
-**A:** Assurance that someone cannot deny their actions  
-
----
-
-### Flashcard 2
-**Q:** What does non-repudiation prove?  
-**A:** Who sent the data and that it wasn’t changed  
+Mathematical scheme to verify the integrity of data.  
 
 ---
 
-### Flashcard 3
-**Q:** What technology is commonly used for non-repudiation?  
-**A:** Digital signatures  
+### Certificates 📜
+It's common to use certificates to be able to identify devices or people and provide additional factors of integrity, especially when you are transferring data from one device to another.  
+
+Combine with a digital signature to verify an individual.  
 
 ---
 
-### Flashcard 4
-**Q:** What role does hashing play in non-repudiation?  
-**A:** Verifies data integrity  
+## Non-repudiation 🧾
+This means we have proof of integrity, and we can confirm without a doubt that the information that we’ve received really did come from the originating party.  
+
+Provides proof of integrity, can be asserted to be genuine.  
 
 ---
 
-### Flashcard 5
-**Q:** What happens if data changes after hashing?  
-**A:** The hash value changes  
+## Availability ⚡
+We want to make sure that all of our systems remain up and running at all times.  
+
+Availability ensures that people have access to the data that they’d like to view  
+Systems and networks must be up and running.  
 
 ---
 
-### Flashcard 6
-**Q:** What type of cryptography is used in digital signatures?  
-**A:** Public key cryptography  
----
-## 6️⃣ Exam Tips (VERY IMPORTANT)
+### Redundancy ♻️
+one way to provide this availability is to have systems that are designed to be always up and running.  
 
-### How CompTIA tests this
+Build services that will always be available.  
 
-They don’t ask:
-
-> “What is non-repudiation?”
-
-They ask scenario-based questions.
+We might combine this with a system that has fault tolerance.  
 
 ---
 
-### Example 1
+### Fault tolerance ⚙️
+Fault tolerance is where we have multiple components, and if one of those components fails, the other component picks up and continues to operate normally.  
 
-A user sends a digitally signed message and later denies sending it.  
-
-👉 **Answer: Non-repudiation**
-
----
-
-### Example 2
-
-A system verifies that a file has not been altered.  
-
-👉 **Answer: Integrity (NOT non-repudiation ⚠️)**
+The system will continue to run, even when a failure occurs.  
 
 ---
 
-## 🔥 KEY TRAP
-
-- **Hashing alone → Integrity**  
-- **Digital signature → Non-repudiation**  
+If you are concerned about systems being available, you’ll constantly need to make sure that they are managed and updated by patching those systems.  
 
 ---
 
-## 🧠 Memory Trick
+### Patching 🔄
+This ensures that the systems are always as stable as possible and that we can close any existing security holes, preventing someone from gaining access through some type of exploit.  
 
-- **Signature = proof = non-repudiation**  
-- **Hash = integrity only**  
+Stability  
+Close security holes  
+
+---
+
+
 
