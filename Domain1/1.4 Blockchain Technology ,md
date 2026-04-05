@@ -1,0 +1,223 @@
+---
+
+# 🔐 1.4 : Blockchain Technology
+
+---
+
+## 1️⃣ What is Blockchain?
+
+### 🧾 Definition:
+
+Blockchain is a **distributed ledger**
+
+* A ledger that is:
+
+  * Shared
+  * Visible to participants
+  * Used to track transactions
+
+---
+
+### 🧠 Analogy (from video):
+
+👉 A blockchain is like a **ledger (record book)** that everyone can see and maintain
+
+* Everyone has a copy of the same record book
+* Everyone can verify what’s written in it
+
+---
+
+### 🎯 Purpose:
+
+* Track transactions
+* Maintain a shared record
+* Ensure transparency
+
+---
+
+## 2️⃣ Distributed Ledger Concept
+
+### 📡 Key Idea:
+
+* Every participant:
+
+  * Has a copy of the ledger
+  * Helps maintain it
+
+---
+
+### 🧠 Analogy (from video):
+
+👉 Instead of sending information to one person, it is sent to **everyone participating**
+
+* Everyone receives the same update
+* Everyone keeps their copy synchronized
+
+---
+
+## 3️⃣ Blockchain Use Cases
+
+* Payment processing (e.g., Bitcoin)
+* Digital identity
+* Supply chain tracking
+* Digital voting
+
+---
+
+### 🧠 Analogy (from video examples):
+
+👉 Like tracking:
+
+* Money transfers
+* Ownership (house title)
+* Data transfers (backup process)
+
+---
+
+## 4️⃣ How a Transaction Works
+
+### 🔄 Process:
+
+1. A transaction occurs
+
+   * Example: sending Bitcoin
+
+2. Transaction is sent to **all participants**
+
+3. Everyone receives a copy
+
+4. Transaction is grouped into a **block**
+
+---
+
+### 🧠 Analogy (from video):
+
+👉 Instead of telling one person about a transaction, you **announce it to everyone**
+
+---
+
+## 5️⃣ Blocks in Blockchain
+
+### 📦 Definition:
+
+A **block** = group of transactions
+
+---
+
+### 🔗 Process:
+
+* Transactions are collected
+* Added into a block
+* Block is prepared for the chain
+
+---
+
+## 6️⃣ Hashing in Blockchain
+
+### 🔐 Key Concept:
+
+Each block includes a **hash**
+
+* Provides **integrity**
+* Protects all transactions in the block
+
+---
+
+### 🧠 Analogy (from video connection to hashing):
+
+👉 The hash acts like a **fingerprint for the entire block**
+
+* If anything changes → fingerprint changes
+* If fingerprint doesn’t match → block is invalid
+
+---
+
+## 7️⃣ Block Distribution
+
+### 📡 Process:
+
+* Completed block is sent to all participants
+* Everyone updates their copy of the ledger
+
+---
+
+### 🧠 Analogy (from video):
+
+👉 Everyone receives the updated version of the ledger
+
+---
+
+## 8️⃣ Tamper Detection
+
+### ⚠️ What happens if data is changed?
+
+* Hash becomes invalid
+* Other participants detect mismatch
+* Block is rejected
+
+---
+
+### 🧠 Analogy (from video):
+
+👉 If someone changes a transaction:
+
+* The fingerprint (hash) no longer matches
+* Everyone else sees it’s been altered and rejects it
+
+---
+
+## 9️⃣ Key Takeaways
+
+* Blockchain = distributed ledger
+* Everyone has a copy
+* Transactions are shared with all participants
+* Blocks contain:
+
+  * Transactions
+  * Hash (integrity check)
+* If data changes → hash mismatch → rejected
+
+---
+
+## 🧠 Memory Anchors (from video)
+
+* 📖 **Blockchain = shared ledger**
+* 🌐 **Everyone has a copy**
+* 📢 **Transactions are broadcast to all**
+* 📦 **Block = group of transactions**
+* 🔍 **Hash = fingerprint of block**
+
+---
+
+## 🧾 Flashcards (Active Recall)
+
+1. **Q:** What is blockchain?
+   **A:** A distributed ledger used to track transactions.
+
+2. **Q:** What is a distributed ledger?
+   **A:** A ledger shared across multiple participants.
+
+3. **Q:** What is a block?
+   **A:** A group of transactions added to the blockchain.
+
+4. **Q:** What ensures integrity in a block?
+   **A:** A hash.
+
+5. **Q:** What happens if a block is modified?
+   **A:** The hash becomes invalid and the block is rejected.
+
+6. **Q:** Who maintains the blockchain?
+   **A:** All participating devices.
+
+---
+
+## ✅ Final Insight
+
+👉 Blockchain = **shared trust system**
+
+* No single owner
+* Everyone verifies
+* Integrity is enforced through hashing
+
+---
+
