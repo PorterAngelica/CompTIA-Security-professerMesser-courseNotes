@@ -1,0 +1,636 @@
+---
+
+# 🔐 2.1: Threat Vectors
+
+---
+
+## 1️⃣ What is a Threat Vector?
+
+### 🧾 Definition:
+
+A **threat vector** is the method an attacker uses to gain access to a system 
+
+👉 Also called:
+
+* Attack vector
+
+---
+
+### 🎯 Purpose:
+
+* Identify **how attacks happen**
+* Help prevent entry points
+
+---
+
+## 🔥 KEY EXAM IDEA
+
+👉 Threat actor = **WHO**
+👉 Threat vector = **HOW**
+
+---
+
+# 2️⃣ Messaging-Based Threat Vectors (VERY COMMON)
+
+---
+
+## 📧 Email
+
+* Phishing links
+* Malicious attachments
+* Fake login pages
+
+---
+
+## 📱 SMS (Smishing)
+
+* Text messages with malicious links
+
+---
+
+## 💬 Instant Messaging / DMs
+
+* Direct communication
+* Social engineering
+
+---
+
+### ⚠️ Key Risk:
+
+👉 Tricks user into clicking or trusting
+
+---
+
+## 🎯 Common Attacks:
+
+* Phishing
+* Malware delivery
+* Fake invoices
+* Crypto scams
+
+---
+
+# 3️⃣ Image-Based Threat Vectors
+
+---
+
+## 🖼️ SVG Files
+
+* Not just images → contain code (XML)
+* Can include:
+
+  * JavaScript
+  * HTML
+
+---
+
+### ⚠️ Risk:
+
+* Code runs inside browser
+* Can lead to **XSS attacks**
+
+---
+
+# 4️⃣ File-Based Threat Vectors
+
+---
+
+## 📄 PDFs
+
+* Can contain:
+
+  * Scripts
+  * Embedded objects
+
+---
+
+## 📦 Compressed Files (ZIP/RAR)
+
+* Hide malicious files
+* Hard to inspect
+
+---
+
+## 📊 Office Files
+
+* Macros can execute code
+
+---
+
+## 🧩 Browser Extensions
+
+* Can contain malware
+
+---
+
+### ⚠️ Key Idea:
+
+👉 Files = hidden execution points
+
+---
+
+# 5️⃣ Voice & Phone-Based Threat Vectors
+
+---
+
+## 📞 Vishing (Voice Phishing)
+
+* Phone calls to steal info
+
+---
+
+## 📡 SPIT (Spam over IP)
+
+* Automated voice spam
+
+---
+
+## 🔢 War Dialing
+
+* Scanning phone numbers for access
+
+---
+
+# 6️⃣ Removable Media Threat Vectors
+
+---
+
+## 🔌 USB Attacks
+
+* Malware on USB
+* Dropped in public areas
+
+---
+
+## ⚠️ Advanced USB Attack
+
+* Acts like a keyboard
+* Automatically executes commands
+
+---
+
+## 🌐 Air-Gapped Risk
+
+* USB bypasses network isolation
+
+---
+
+# 7️⃣ Software & System Threat Vectors
+
+---
+
+## 🐛 Unpatched Software
+
+* Vulnerabilities exploited
+
+---
+
+## 🧨 Zero-Day Vulnerabilities
+
+* Unknown flaws exploited first
+
+---
+
+## 🌐 Web Applications
+
+* Central server compromise → infect all users
+
+---
+
+## ⚠️ Unsupported Systems
+
+* No patches available → high risk
+
+---
+
+# 8️⃣ Network-Based Threat Vectors
+
+---
+
+## 📡 Wireless Attacks
+
+* Weak protocols (WEP, WPA)
+* Rogue access points
+
+---
+
+## 🔐 802.1X
+
+* Prevents unauthorized network access
+
+---
+
+## 🔵 Bluetooth
+
+* Reconnaissance
+* Weak implementations
+
+---
+
+# 9️⃣ Open Ports & Misconfiguration
+
+---
+
+## 🚪 Open Ports
+
+* Entry points (e.g., 80, 443)
+
+---
+
+## ⚠️ Misconfiguration
+
+* Incorrect setup → vulnerability
+
+---
+
+## 🔥 Key Idea:
+
+👉 More services = more risk
+
+---
+
+# 🔟 Credential-Based Threat Vectors
+
+---
+
+## 🔑 Default Credentials
+
+* Example:
+
+  * admin / admin
+
+---
+
+### ⚠️ Risk:
+
+👉 Easy full access if not changed
+
+---
+
+# 1️⃣1️⃣ Supply Chain Threat Vectors
+
+---
+
+## 🏭 Third-Party Risk
+
+* MSPs (Managed Service Providers)
+* Vendors
+
+---
+
+## 🔗 Attack Path
+
+👉 Attack vendor → access your system
+
+---
+
+## 🧨 Example:
+
+* Target breach (HVAC vendor)
+
+---
+
+## ⚙️ Counterfeit Hardware
+
+* Fake devices with malware
+
+---
+
+# 🧠 Memory Anchors (Concept-Based)
+
+* Messaging = phishing
+* Files = hidden malware
+* USB = physical entry
+* Network = wireless/open ports
+* Credentials = defaults
+* Supply chain = third-party risk
+
+---
+
+# 🧾 Flashcards (Active Recall)
+
+1. What is a threat vector?
+2. What is the difference between threat actor and threat vector?
+3. Why are messaging systems common attack vectors?
+4. What is smishing?
+5. What is vishing?
+6. Why are SVG files dangerous?
+7. Why are PDFs considered a threat vector?
+8. What is a macro attack?
+9. Why are compressed files risky?
+10. What is war dialing?
+11. Why are USB devices dangerous?
+12. What is an air-gapped network?
+13. What is a zero-day vulnerability?
+14. Why are unsupported systems dangerous?
+15. What is a rogue access point?
+16. Why are open ports risky?
+17. What are default credentials?
+18. What is a supply chain attack?
+19. What is an MSP?
+20. Why is misconfiguration dangerous?
+
+---
+
+# ➕ Extra Recall
+
+21. Why do phishing attacks work so well?
+22. How can malware be hidden in files?
+23. Why is patching important?
+24. How can attackers bypass strong network security?
+25. Why is third-party access risky?
+
+---
+
+# 🧪 Scenario Questions
+
+26. A user receives a fake bank email with a login page. What vector?
+
+27. A text message contains a malicious link. What vector?
+
+28. A PDF installs malware when opened. What vector?
+
+29. A USB is found in a parking lot and infects a system. What vector?
+
+30. A company is attacked through a vendor system. What vector?
+
+31. A system is exploited through an unpatched vulnerability. What vector?
+
+32. A hacker accesses a router using admin/admin. What vector?
+
+33. A fake Wi-Fi network is used to capture data. What vector?
+
+---
+
+# 🧩 PBQ
+
+34. Match vector to example:
+
+* Email
+* USB
+* Supply chain
+* Open ports
+
+---
+
+35. Classify threat vectors:
+
+* Messaging
+* File-based
+* Network-based
+* Physical
+
+---
+
+## ✅ Final Insight
+
+👉 The exam will NOT ask:
+
+* “What is a threat vector?”
+
+👉 It will ask:
+
+* “HOW did the attacker get in?”
+
+---
+
+# 🧾 ANSWERS – Threat Vectors
+
+---
+
+## 🔹 Flashcards
+
+1. A method used by an attacker to gain access to a system.
+
+2. Threat actor = **who attacks**
+   Threat vector = **how they attack**
+
+3. Because they allow **direct communication and social engineering**
+
+4. **Smishing** = phishing via SMS/text messages
+
+5. **Vishing** = phishing via voice/phone calls
+
+6. Because they can contain **embedded code (JavaScript/HTML)** that runs in the browser
+
+7. Because they can contain **scripts and embedded malicious content**
+
+8. A malicious script embedded in an Office document
+
+9. Because they can **hide malicious files inside compressed content**
+
+10. Scanning phone numbers to find systems to exploit
+
+11. Because they can contain malware or act as input devices
+
+12. A network with **no direct internet connection**
+
+13. A vulnerability unknown to the vendor and not yet patched
+
+14. Because they **no longer receive security updates/patches**
+
+15. An unauthorized wireless access point
+
+16. Because they expose entry points into a system
+
+17. Pre-set usernames/passwords (e.g., admin/admin)
+
+18. An attack through a third-party vendor or provider
+
+19. Managed Service Provider (third-party managing systems)
+
+20. Because incorrect configuration can **create security vulnerabilities**
+
+---
+
+## ➕ Extra Recall
+
+21. Because they exploit **trust and human behavior**
+
+22. Through:
+
+* Scripts
+* Macros
+* Embedded objects
+
+23. To fix known vulnerabilities and prevent exploitation
+
+24. Using:
+
+* Social engineering
+* USB devices
+* Supply chain attacks
+
+25. Because third parties can become **entry points into your network**
+
+---
+
+## 🧪 Scenario Questions
+
+26. 👉 **Email phishing (Messaging vector)**
+
+27. 👉 **Smishing (SMS vector)**
+
+28. 👉 **File-based vector (PDF)**
+
+29. 👉 **USB / Removable media vector**
+
+30. 👉 **Supply chain attack**
+
+31. 👉 **Software vulnerability / unpatched system vector**
+
+32. 👉 **Default credential attack**
+
+33. 👉 **Rogue access point (network vector)**
+
+---
+
+## 🧩 PBQs
+
+### 34. Match vector to example
+
+* Email → Phishing
+* USB → Malware delivery
+* Supply chain → Vendor compromise
+* Open ports → Network access
+
+---
+
+### 35. Classify threat vectors
+
+* Messaging → Email, SMS, IM
+* File-based → PDF, ZIP, Office
+* Network-based → Wi-Fi, ports
+* Physical → USB
+
+---
+
+# 🧠 1-PAGE CHEAT SHEET (THREAT VECTORS)
+
+---
+
+## 🎯 Core Idea
+
+👉 Threat vector = **HOW attacker gets in**
+
+---
+
+## 🧩 Main Categories
+
+### 📧 Messaging
+
+* Email → phishing
+* SMS → smishing
+* Calls → vishing
+
+👉 Social engineering entry point
+
+---
+
+### 📄 File-Based
+
+* PDF
+* ZIP/RAR
+* Office macros
+* Browser extensions
+
+👉 Hidden malware
+
+---
+
+### 🖼️ Image-Based
+
+* SVG → contains code
+
+👉 Can run scripts in browser
+
+---
+
+### 📞 Voice / Phone
+
+* Vishing
+* SPIT
+* War dialing
+
+---
+
+### 🔌 Physical
+
+* USB devices
+* Keyboard injection
+
+👉 Bypass network security
+
+---
+
+### 🧨 Software
+
+* Unpatched systems
+* Zero-day vulnerabilities
+* Unsupported OS
+
+---
+
+### 🌐 Network
+
+* Rogue Wi-Fi
+* Weak encryption
+* Open ports
+* Bluetooth
+
+---
+
+### 🔑 Credentials
+
+* Default credentials
+
+👉 Easy access
+
+---
+
+### 🏭 Supply Chain
+
+* Vendors
+* MSPs
+* Third-party access
+
+👉 Attack vendor → access you
+
+---
+
+## 🔥 EXAM PATTERNS
+
+👉 If question says:
+
+* “User tricked via email” → Messaging
+* “Malicious file” → File-based
+* “USB found” → Physical
+* “Vendor compromised” → Supply chain
+* “Unpatched system” → Software
+* “Fake Wi-Fi” → Network
+* “admin/admin login” → Default credentials
+
+---
+
+## ⚡ Ultra Memory Triggers
+
+* Messaging = phishing
+* Files = hidden malware
+* USB = physical bypass
+* Network = entry points
+* Credentials = easy access
+* Supply chain = third-party
+
+---
+
+# 🎯 HOW TO MASTER THIS
+
+👉 Cover cheat sheet → say out loud:
+
+> “Messaging → phishing”
+> “USB → physical attack”
+> “Supply chain → vendor access”
+
+---
+
+
